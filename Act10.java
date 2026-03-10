@@ -1,22 +1,21 @@
 import java.util.Scanner;
 
-public class AverageTestCase {
+public class AverageTest {
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Program: Compute the average of 3 numbers");
-        System.out.println("Formula: (num1 + num2 + num3) / 3");
+        System.out.print("num1: ");
+        int num1 = scanner.nextInt();
 
-        System.out.print("Enter num1: ");
-        double num1 = scanner.nextDouble();
+        System.out.print("num2: ");
+        int num2 = scanner.nextInt();
 
-        System.out.print("Enter num2: ");
-        double num2 = scanner.nextDouble();
+        System.out.print("num3: ");
+        int num3 = scanner.nextInt();
 
-        System.out.print("Enter num3: ");
-        double num3 = scanner.nextDouble();
-
-        double average = (num1 + num2 + num3) / 3;
+        double average = (num1 + num2 + num3) / 3.0;
 
         System.out.println("Average: " + average);
 
